@@ -1,3 +1,4 @@
+//Credenciales de Firebase
 export const environment = {
   production: false,
   firebaseConfig: {

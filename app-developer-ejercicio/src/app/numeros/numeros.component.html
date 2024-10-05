@@ -1,20 +1,26 @@
+<!-- Contenedor principal -->
 <div class="main">
+  <!-- Contenedor del contenido -->
   <div class="content">
+    <!-- Elemento de entrada de Ionic -->
     <ion-item>
+      <!-- Label para el campo de entrada -->
       <ion-label>Ingrese Numero</ion-label>
+      <!-- Campo de entrada para el número -->
       <ion-input type="number" [(ngModel)]="inputNumber" name="inputNumber"></ion-input>
     </ion-item>
+    <!-- Botón para enviar el formulario -->
     <button (click)="onSubmit()">Enviar</button>
 
+    <!-- Título para la lista de números guardados -->
     <h3>Numeros Guardados</h3>
 
+    <!-- Lista de números generados -->
     <ul>
+      <!-- Itera sobre el array de números y muestra cada número con su color y múltiplos -->
       <li *ngFor="let number of numbers" [style.color]="number.color">
         {{ number.value }} <span *ngIf="number.multiples.length">({{ number.multiples.join(', ') }})</span>
       </li>
     </ul>
-
-
-
   </div>
 </div>

@@ -1,3 +1,4 @@
+//Credenciales de Firebase para producción
 export const environment = {
   production: true,
   firebaseConfig: {

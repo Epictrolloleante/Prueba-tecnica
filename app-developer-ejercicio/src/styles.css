@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importar los estilos de Ionic */
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+@import '~@ionic/angular/css/display.css';
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+body > app-root {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100%;
+  overflow-y: auto;
+  width: 100%;
+
+}

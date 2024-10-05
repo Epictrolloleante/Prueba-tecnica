@@ -1,0 +1,20 @@
+<div class="main">
+  <div class="content">
+    <ion-item>
+      <ion-label>Ingrese Numero</ion-label>
+      <ion-input type="number" [(ngModel)]="inputNumber" name="inputNumber"></ion-input>
+    </ion-item>
+    <button (click)="onSubmit()">Enviar</button>
+
+    <h3>Numeros Guardados</h3>
+
+    <ul>
+      <li *ngFor="let number of numbers" [style.color]="number.color">
+        {{ number.value }} <span *ngIf="number.multiples.length">({{ number.multiples.join(', ') }})</span>
+      </li>
+    </ul>
+
+
+
+  </div>
+</div>
